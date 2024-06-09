@@ -1,0 +1,157 @@
+body {
+	
+	font-size: 2rem;
+	padding: 0px;
+	margin: 0px;
+	font-family: Garamond, Tahoma, sans-serif;
+
+}
+
+.backgd {
+	background-color: black;
+	background-image: url("../img/High Resolution Logo - Black Background.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: grey;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	font-size: 1.2em;
+	text-indent: 1%;
+}
+
+.navbar a {
+	float: right;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 0.6em; 
+	color: black;
+}
+
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+
+.main {
+	margin: 5%;
+	padding: 2px;
+	display: block;
+	text-align: center;
+	color: black;
+	background-color: lightgrey;
+	opacity: 85%;
+	font-size: 1.6rem;
+
+}
+
+.main p {
+	margin: 5%;
+	/* margin-right: 10%; */
+	text-align: center;
+	text-indent: 5%;
+
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	padding: 10px;
+
+}
+
+.grid-item {
+	padding: 5px;
+	text-align: center;
+}
+
+table, th, td {
+	/*width: 87%;*/
+	border-width: 5px;
+	border: solid black 2px;
+	border-collapse: collapse;
+	margin: 12px;
+}
+
+td {
+	width: 33%;
+	padding: 8px 12px;
+	text-align: left;
+}
+
+#grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-rows: 400px 400px;
+	gap: 12px;
+	margin: 12px;
+}
+div.item {
+	border: solid black;
+	border-radius: 5px;
+	border-spacing: 10px;
+}
+
+.about p {
+	text-indent: 5%;
+	text-align: left;
+	margin: 3%;
+}
+
+
+input[type=text], input[type=password], input[type=email] {
+	width: 350px;
+	padding: 15px;
+	margin: 5px 0 18px 0;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 0.6em;
+
+}
+
+select, button, input[type=date] {
+	font-size: 0.6em;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+/*
+The classes below are no longer used, however, I did not see a reason to delete them as of yet.
+*/
+
+.home {
+	background-image: url("../img/pexels-pixabay-45182.jpg");	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.flights {
+	background-image: url("../img/pexels-rachel-claire-7276734.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.service {
+	background-image: url("../img/pexels-darli-donizete-3678749.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.contact {
+	background-image: url("../img/pexels-airam-vargas-868940.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}

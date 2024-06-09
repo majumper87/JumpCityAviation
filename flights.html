@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- basic meta data for the page. The main point was to include myself as the author. -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Mark Jumper">
+
+		<title>Flights</title>
+		<link rel="stylesheet" href="css/site.css">
+	</head>
+
+	<!-- Main body tag, with the class to set up the main format of the page. -->
+	<body class="backgd">
+		<!-- This is the navbar throughout the site. This includes formatting to appear on the right and padding between each navigation. There is also a hover feature for when the user points to a particular page. -->
+		<div class="navbar">
+			Jump City Aviation
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<a href="services.html">Services</a>
+			<a href="flights.html">Flights</a>
+			<a href="index.html">Home</a>			
+		</div>
+		<!-- This div was created to include the required video element implementation. -->
+		<div>
+			<video width="100%" height="100%" src="vid/file_example_OGG_480_1_7mg.ogg" autoplay preload="auto" muted loop style="opacity: 85%;">
+				<!-- Video from: https://file-examples.com/wp-content/uploads/2018/04/file_example_OGG_480_1_7mg.ogg -->
+			Video cannot be displayed
+			</video>
+				
+		</div>
+		<!-- This is the beginning of the main content. -->
+		<div class="main">
+			
+			<div>
+				<header>
+					<h1>Flights</h1>
+				</header>
+			</div>
+			<!-- The divs below are two separate grid containers with two items to separate the images from the text. They also allow for adjustments of window/screen sizing. -->
+			<div id="grid">
+				<div class="item">
+					30 min Flight
+					<br/>
+					1-3 People
+					<br/>
+					$200
+					<br/>
+					<br/>
+					<img src="img/pexels-trac-vu-5741643.jpg" height="190" width="auto">
+					<!-- Photo by Trac Vu: https://www.pexels.com/photo/a-low-angle-shot-of-an-airplane-flying-in-the-sky-5741643/ -->
+				</div>
+				<div class="item">
+					1 hour Flight
+					<br/>
+					1-3 People
+					<br/>
+					$250
+					<br/>
+					<br/>
+					<img src="img/pexels-jarod-barton-8228203.jpg" height="190" width="auto">
+					<!-- Photo by Jarod Barton: https://www.pexels.com/photo/flight-sunset-flying-people-8228203/ -->
+				</div>
+				<div class="item">
+					Instructor Lessons
+					<br/>
+					1 Person
+					<br/>
+					$200
+					<br/>
+					<br/>
+					<img src="img/pexels-rachel-claire-7276734.jpg" height="190" width="auto">
+					<!-- Photo by Rachel Claire: https://www.pexels.com/photo/a-cessna-172-7276734/ -->
+				</div>
+				<div class="item">
+					Valentine's Day Special
+					<br/>
+					Roses, Dinner and Flight
+					<br/>
+					$350
+					<br/>
+					<br/>
+					<img src="img/pexels-cottonbro-4255484.jpg" height="190" width="auto">
+					<!-- Photo by cottonbro: https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-sitting-on-chair-4255484/ -->
+				</div>
+				<div class="item">
+					Christmas Light Tour
+					<br/>
+					1-3 People
+					<br/>
+					$250
+					<br/>
+					<br/>
+					<img src="img/pexels-sebi-pintilie-759948.jpg" height="190" width="auto">
+					<!-- Photo by Sebi Pintilie: https://www.pexels.com/photo/christmas-tree-with-decorations-during-nighttime-759948/ -->
+				</div>
+				<div class="item">
+					Add Flowers
+					<br/>
+					Per Flight Plan
+					<br/>
+					$50
+					<br/>
+					<br/>
+					<img src="img/pexels-picjumbocom-196664 (1).jpg" height="190" width="auto">
+					<!-- Photo by picjumbo.com: https://www.pexels.com/photo/red-roses-close-up-photography-196664/ -->
+				</div>
+				<div class="item">
+					Add Dinner
+					<br/>
+					Per Flight Plan
+					<br/>
+					$100
+					<br/>
+					<br/>
+					<img src="img/pexels-creative-vix-370984.jpg" height="190" width="auto">
+					<!-- Photo by Creative Vix: https://www.pexels.com/photo/clear-footed-glass-beside-bowl-370984/ -->
+				</div>
+			</div>
+
+			<!-- This div is the beginning of the form for the page. It includes a fieldset and legend tag. -->
+			<div class="about" style="text-align: left; text-indent: 0;">
+				<fieldset>
+					<legend>Registration:</legend>
+					<!-- This part of the form is for the user to fill out a name and email for contact and registration purposes. -->
+						<form method="post">
+							<label for="firstName">First Name:</label>
+							<br/>
+							<input type="text" id="firstName" name="firstName" maxlength="20" required>
+							<br/>
+													
+							<label for="lastName">Last Name:</label>
+							<br/>
+							<input type="text" id="lastName" name="lastName" maxlength="20" required>
+							<br/>
+						
+							<label for="email">Email:</label>
+							<br/>
+							<input type="email" id="email" name="email" maxlength="30" required>
+							<br/>
+						
+							<label for="confirmEmail">Confirm Email:</label>
+							<br/>
+							<input type="email" id="confirmEmail" name="confirmEmail" maxlength="30" required onchange="confEmail()" >
+							<br/>
+							
+							<!-- This part of the form is to select a flight, how many people, any add-ons and a date requested. -->
+							Choose Flight:
+							<br/>
+							<select id="flightPlan" name="flightPlan" value="flightPlan" required>
+								<option value="30Tour">30 Min Flight</option>
+								<option value="1HourTour">1 Hour Flight</option>
+								<option value="instructor">Instructor Lesson</option>
+								<option value="valentines">Valentine's Day Special</option>
+								<option value="christmasLights">Christmas Lights Tour</option>
+							</select>
+							<br/>
+							<br/>
+							
+							<!-- The number of people is a radio and pre-checked for at minimum of one person. -->
+							Number of People:
+							<input type="radio" id="numPeople" name="numPeople" value="1" checked>1</input>
+							<input type="radio" id="numPeople" name="numPeople" value="2">2</input>
+							<input type="radio" id="numPeople" name="numPeople" value="3">3</input>
+							<br/>
+							<br/>
+
+							<!-- This section uses check boxes and are not preselected as they are optional. -->
+							Add Ons:
+							<br/>
+							<input type="checkbox" id="addon1" name="dinner" value="dinner">Dinner</input>
+							<input type="checkbox" id="addon2" name="flowers" value="flowers">Flowers</input>
+							<br/>
+							<br/>
+
+							<!-- Date is for day requested. To further include a script to not be able to select days prior to one week in advance to allow flight planning with FAA. -->
+							Date
+							<input type="Date" id="fligtDate" name="flightDate" value="flightDate" required></input>
+							<button type="submit" id="register" value="true" >Register</button>
+							
+						</form>
+						<script type="text/javascript">
+							function confEmail() {
+								var email = document.getElementById("email").value;
+								var confirmEmail = document.getElementById("confirmEmail").value;
+								if(email != confirmEmail) {
+									alert('Email Does Not Match');
+									document.getElementById("confirmEmail").style.color = "red";
+
+									return false;
+								} else {
+									document.getElementById("confirmEmail").style.color = "black";
+								}
+							};
+
+							const confirmEmail = document.getElementById("confirmEmail");
+
+							confirmEmail.addEventListener('click', function onclick(event) {
+								const input = document.getElementById("confirmEmail");
+								if(input.style.color == 'red') {
+									this.value='';
+								}
+							});
+							
+						</script>				
+				</fieldset>
+			</div>
+		</div>
+	</body>
+	
+</html>
