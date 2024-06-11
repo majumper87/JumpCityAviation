@@ -8,27 +8,44 @@
 		<meta name="author" content="Mark Jumper">
 
 		<title>Contact</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 		<link rel="stylesheet" href="css/site.css">
 	</head>
 
 	<!-- Main body tag, with the class to set up the main format of the page. -->
 	<body class="backgd">
 		<!-- This is the navbar throughout the site. This includes formatting to appear on the right and padding between each navigation. There is also a hover feature for when the user points to a particular page. -->
-		<div class="navbar">
-			Jump City Aviation
-			<a href="about.html">About</a>
-			<a href="contact.html">Contact</a>
-			<a href="services.html">Services</a>
-			<a href="flights.html">Flights</a>
-			<a href="index.html">Home</a>			
-		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">Jump City Aviation</a>
+
+				<button type="button" class="navbar-toggler" data-toggle="collapse"
+					data-target="#navbar"
+					aria-controls="navbar"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav">
+						<li class="nav-item"><a href="index.html">Home</a></li>
+						<li class="nav-item"><a href="flights.html">Flights</a></li>
+						<li class="nav-item"><a href="services.html">Services</a></li>
+						<li class="nav-item"><a href="contact.html">Contact</a></li>
+						<li class="nav-item"><a href="about.html">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		<div class="main">
 			<div>
 				<header>
 					<h1>Contacts</h1>
 				</header>
 			</div>
-			<div>
+			<div class="scrollingTable">
 				<!-- This is the table for the contacts, it has three columns and can include more rows. -->
 				<table style="width: 98%;">
 					<tr>
@@ -78,6 +95,10 @@
 				</table>
 			</div>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
 		
 	</body>
 </html>

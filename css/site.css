@@ -1,8 +1,7 @@
 body {
 	
 	font-size: 2rem;
-	padding: 0px;
-	margin: 0px;
+	padding-top: 56px;
 	font-family: Garamond, Tahoma, sans-serif;
 
 }
@@ -12,19 +11,10 @@ body {
 	background-image: url("../img/High Resolution Logo - Black Background.jpeg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: contain;
 }
 
-.navbar {
-	overflow: hidden;
-	background-color: grey;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
-	font-size: 1.2em;
-	text-indent: 1%;
-}
+
 
 .navbar a {
 	float: right;
@@ -33,12 +23,7 @@ body {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 0.6em; 
-	color: black;
-}
-
-.navbar a:hover {
-	background: #ddd;
-	color: black;
+	color: white;
 }
 
 .main {
@@ -63,7 +48,7 @@ body {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	padding: 10px;
 
 }
@@ -73,12 +58,19 @@ body {
 	text-align: center;
 }
 
+.scrollingTable {
+	width: 98%;
+	/*max-width: 100%;*/
+	overflow-x: auto;
+}
+
 table, th, td {
 	/*width: 87%;*/
-	border-width: 5px;
+	font-size: 2.5vw;
+	border-width: 8px;
 	border: solid black 2px;
 	border-collapse: collapse;
-	margin: 12px;
+	margin: 10px;
 }
 
 td {
